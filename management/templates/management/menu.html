@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}  <!-- Load static files -->
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+    <h1 class="text-center mb-4">Our Delicious Menu</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{% static 'management/images/espresso.jpg' %}" class="card-img-top" alt="Espresso">
+                <div class="card-body">
+                    <h5 class="card-title">Espresso</h5>
+                    <p class="card-text">A rich and bold coffee experience.</p>
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{% static 'management/images/latte.jpg' %}" class="card-img-top" alt="Latte">
+                <div class="card-body">
+                    <h5 class="card-title">Latte</h5>
+                    <p class="card-text">Smooth and creamy with steamed milk.</p>
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{% static 'management/images/cappuccino.jpg' %}" class="card-img-top" alt="Cappuccino">
+                <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text">Perfect balance of coffee and foam.</p>
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
